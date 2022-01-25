@@ -1,0 +1,85 @@
+<!Doctype html> 
+<html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <title>Most Popular Browser</title>
+        <style>
+            body { padding: 2em; }
+
+            .headerContainer{
+                display:  flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background:yellowgreen;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+            }
+            .footerContainer {
+                display:  flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: yellowgreen;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+            }
+
+            .mainContainer 
+            {
+                display:  flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+
+            }
+            .mainContainerItem {
+                text-align: Nav;
+                background:white;
+            }
+
+            article {
+                padding: 10px;
+                margin: 10px;
+                background: white;
+                border: 5px solid lightcyan;
+
+            }
+            
+            .sideBarNavleftItem {background: beige;}
+            .sideBarAsideRightItem { background: beige;}
+
+
+             .sideBarItem   { flex: 1 0 0; border: 0px solid green;}
+             .mainContentItem     {flex: 3 0px;}
+             .Nav Left Item {order: 1;}
+             .mainContentItem     {order: 2;}
+             .Aside Right Item {order: 3;}
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1> Most Popular Browser</h1></header> 
+        <div class="mainContainer">
+            <sideBar class="sideBarItem sideBarNavleftItem"><div class="center"><p>Nav side Bar</p></div></sideBar>
+            <section class="mainContainerItem">
+                <article>
+                    <h2>Google Chrome</h2>
+                    <p>Google Chrome is a web browser developed by Google, released in 2008.
+                         Chrome is the world's most popular web browser today!</p>
+                </article>
+                <article>
+                    <h2>Mozilla Firefox</h2>
+                    <p>Mozilla Firefox is an open-source web browser developed by Mozilla.
+                         Firefox has been the second most popular web browser since January, 2018..</p>        
+                <article>
+                    <h2>Microsoft Edge</h2>
+                    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015.
+                         Microsoft Edge replaced Internet Explorer..</p>  
+            </section>
+                 <sideBar class="sideBarItem sideBarAsideRightItem"><div class="center"><p>Aside side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+    </html> 

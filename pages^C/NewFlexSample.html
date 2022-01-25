@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <little>CodePen - Demo Flexbox 3</little>
+        <style>
+            body {padding: 2em;}
+
+            .headerContainer{
+                display:  flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+            }
+            .footerContainer{
+                display:  flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+            }
+            .mainContainer{
+                display:  flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContainerItem{
+                text-align: left;
+                background: deepskyblue;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBArLeftItem {background:  gold;}
+            .sideBArRightItem { background: hotpink;}
+
+             .sideBArItem   { flex: 1 0 0; border: 0px solid green;}
+             .mainContentItem     {flex: 3 0px;}
+             .sideBArLeftItem {order: 1;}
+             .mainContentItem     {order: 2;}
+             .sideBArLeftItem {order: 3;}
+
+        </style>
+    </head>
+    <body>
+<header class="headerContainer"><h1>Header - Sample Flexbox Example</h1></header>
+<div class="mainContainer">
+    <section class="mainContainer">
+        <article>
+            <h2>First article</h2>
+            <p>In Mexico, tacos are simply a wrapper, usually corn but sometimes a flour tortilla,
+                 wrapped around small bits of food, often meats, topped with fresh onion, cilantro and a little sauce.
+                  In the U.S. a taco is more likely a u-shaped corn tortilla (sometimes pre-baked) filled with ground meat,
+                   lettuce, cheese, topped with some sort of sauce. No matter how you define this dish, tacos have made their
+                    way into main stream American cuisine.</p>
+        </article> 
+        <article>
+            <h2>Second article</h2>
+            <p>In Mexico, tacos are simply a wrapper, usually corn but sometimes a flour tortilla,
+                wrapped around small bits of food, often meats, topped with fresh onion, cilantro and a little sauce.
+                 In the U.S. a taco is more likely a u-shaped corn tortilla (sometimes pre-baked) filled with ground meat,
+                  lettuce, cheese, topped with some sort of sauce. No matter how you define this dish, tacos have made their
+                   way into main stream American cuisine.</p>        
+        <article>
+            <h2>Third article</h2>
+            <p>In Mexico, tacos are simply a wrapper, usually corn but sometimes a flour tortilla,
+                wrapped around small bits of food, often meats, topped with fresh onion, cilantro and a little sauce.
+                 In the U.S. a taco is more likely a u-shaped corn tortilla (sometimes pre-baked) filled with ground meat,
+                  lettuce, cheese, topped with some sort of sauce. No matter how you define this dish, tacos have made their
+                   way into main stream American cuisine.</p>        
+    </section>
+    <sideBAr class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBAr>
+    <sideBAr class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBAr>
+
+</div>
+<footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
